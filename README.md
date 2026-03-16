@@ -23,15 +23,15 @@ Let:
 
 E-step:
 
-```text
-Z_ij = (L_ij * theta_j) / sum_k (L_ik * theta_k)
-```
+$$
+Z_{ij} = \frac{L_{ij}\theta_j}{\sum_{k=1}^{M} L_{ik}\theta_k}
+$$
 
 M-step:
 
-```text
-theta_j(new) = (sum_i Z_ij) / N
-```
+$$
+\theta_j^{(\text{new})} = \frac{\sum_{i=1}^{N} Z_{ij}}{N}
+$$
 
 The notebook iterates these updates and visualizes convergence dynamics.
 
